@@ -1,0 +1,1900 @@
+/* Original styles from style.css */
+.landing-page {
+  position: relative;
+  width: 1920px; /* This is very wide, consider responsive units or max-width */
+  /* height: 4109px; */ /* Auto height is usually better */
+  background-color: #1e1e1e;
+  overflow: hidden; /* Be careful with overflow hidden on main page container */
+  margin: 0 auto; /* Center the page if width is fixed */
+}
+
+.landing-page .about-me {
+  /* This is actually the header/nav bar container */
+  position: absolute;
+  width: 100%; /* Make it full width */
+  max-width: 1420px; /* Max content width */
+  height: auto; /* Auto height */
+  top: 61px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px; /* Add some padding */
+  z-index: 100; /* Ensure nav is on top */
+}
+
+.landing-page .group {
+  position: relative;
+  height: 67px;
+  display: flex; /* Use flex for better alignment of nav items */
+  justify-content: space-between; /* Space out logo, links, button */
+  align-items: center; /* Vertically align items */
+}
+
+.landing-page .logo {
+  /* position: absolute; */ /* No longer absolute if using flex */
+  width: 279px;
+  height: 67px;
+  /* top: 0; */
+  /* left: 0; */
+}
+
+.landing-page .div {
+  position: relative;
+  width: 232px;
+  height: 55px;
+  left: 23px;
+}
+
+.landing-page .overlap-group {
+  position: absolute;
+  width: 212px;
+  height: 25px;
+  top: 0;
+  left: 14px;
+}
+
+.landing-page .clip-path-group {
+  position: absolute;
+  width: 62px;
+  height: 10px;
+  top: 7px;
+  left: 0;
+}
+
+.landing-page .group-2 {
+  position: absolute;
+  width: 36px;
+  height: 20px;
+  top: 3px;
+  left: 57px;
+  background-image: url(./img/group-3.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-3 {
+  position: absolute;
+  width: 21px;
+  height: 25px;
+  top: 0;
+  left: 90px;
+  background-image: url(./img/group-2.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-4 {
+  position: absolute;
+  width: 36px;
+  height: 20px;
+  top: 3px;
+  left: 108px;
+  background-image: url(./img/group-5.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .img {
+  position: absolute;
+  width: 69px;
+  height: 10px;
+  top: 4px;
+  left: 143px;
+}
+
+.landing-page .group-5 {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  top: 38px;
+  left: 0;
+  background-image: url(./img/group-6.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-6 {
+  position: absolute;
+  width: 16px;
+  height: 17px;
+  top: 38px;
+  left: 22px;
+  background-image: url(./img/group-7.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-7 {
+  position: absolute;
+  width: 14px;
+  height: 17px;
+  top: 38px;
+  left: 43px;
+  background-image: url(./img/group-8.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-8 {
+  position: absolute;
+  width: 15px;
+  height: 17px;
+  top: 38px;
+  left: 61px;
+  background-image: url(./img/image.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-9 {
+  position: absolute;
+  width: 14px;
+  height: 17px;
+  top: 38px;
+  left: 92px;
+  background-image: url(./img/group-11.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-10 {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  top: 38px;
+  left: 120px;
+  background-image: url(./img/group-9.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-11 {
+  position: absolute;
+  width: 13px;
+  height: 17px;
+  top: 38px;
+  left: 143px;
+  background-image: url(./img/group-10.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-12 {
+  position: absolute;
+  width: 13px;
+  height: 17px;
+  top: 38px;
+  left: 161px;
+  background-image: url(./img/group.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-13 {
+  position: absolute;
+  width: 16px;
+  height: 17px;
+  top: 38px;
+  left: 178px;
+  background-image: url(./img/group-13.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-14 {
+  position: absolute;
+  width: 16px;
+  height: 17px;
+  top: 38px;
+  left: 198px;
+  background-image: url(./img/group-4.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .group-15 {
+  position: absolute;
+  width: 14px;
+  height: 17px;
+  top: 38px;
+  left: 218px;
+  background-image: url(./img/group-12.png);
+  background-size: 100% 100%;
+}
+
+.landing-page .frame {
+  /* Nav links container */
+  display: inline-flex;
+  align-items: center; /* Align links */
+  gap: 12px;
+  /* position: absolute; */ /* No longer absolute */
+  /* top: 7px; */
+  /* left: 401px; */ /* Adjusted by flex justify-content */
+}
+
+.landing-page .div-wrapper {
+  /* Individual nav link wrapper */
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 14px; /* Original padding */
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.landing-page .text-wrapper {
+  /* Home link text in footer */
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--nav-bar-text-21-font-family);
+  font-weight: var(--nav-bar-text-21-font-weight);
+  color: #ffffff;
+  font-size: var(--nav-bar-text-21-font-size);
+  letter-spacing: var(--nav-bar-text-21-letter-spacing);
+  line-height: var(--nav-bar-text-21-line-height);
+  font-style: var(--nav-bar-text-21-font-style);
+}
+
+.landing-page .text-wrapper-2 {
+  /* Nav link text */
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 21px;
+  letter-spacing: 0.63px;
+  line-height: normal;
+  text-decoration: none; /* Ensure links are not underlined by default if <a> tags */
+}
+
+.landing-page .text-wrapper-3 {
+  /* Was this used? Appears similar to text-wrapper-2 */
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #fff7f7;
+  font-size: 21px;
+  letter-spacing: 0.63px;
+  line-height: normal;
+}
+
+.landing-page .overlap-wrapper {
+  /* CV Download button wrapper */
+  /* position: absolute; */ /* No longer absolute */
+  width: auto; /* Fit content or define specific */
+  /* height: 52px; */
+  /* top: 7px; */
+  /* left: 1232px; */ /* Adjusted by flex */
+}
+
+.landing-page .overlap {
+  /* CV Download button */
+  position: relative;
+  width: 188px;
+  height: 52px;
+  background-color: #800020;
+  border-radius: 5px;
+  display: flex; /* For centering text inside */
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page .text-wrapper-4 {
+  /* CV Download text */
+  /* position: absolute; */ /* No longer absolute */
+  width: auto; /* Fit content */
+  /* top: 17px; */ /* Centered by flex on parent */
+  /* left: 18px; */ /* Centered by flex on parent */
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 21px;
+  text-align: center; /* Ensure text is centered */
+  letter-spacing: 0.63px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* Section styling for About Me (nav-bar class used as container) */
+.landing-page .nav-bar {
+  /* About me section container */
+  /* position: absolute; */ /* Sections should flow in document */
+  position: relative; /* For potential inner absolute elements if any */
+  width: 100%;
+  max-width: 1470px; /* Max content width */
+  /* height: 675px; */ /* Auto height */
+  /* top: 1004px; */ /* Determined by document flow */
+  /* left: 200px; */ /* Centered by margin: auto or padding on parent */
+  padding: 60px 20px; /* Add vertical and horizontal padding */
+  margin: 0 auto; /* Center section */
+  box-sizing: border-box;
+}
+
+.landing-page .group-16 {
+  /* Inner container for About Me content */
+  position: relative;
+  width: 100%; /* Full width of parent */
+  /* height: 701px; */ /* Auto height */
+  /* top: 55px; */ /* No longer needed */
+  /* left: 33px; */ /* No longer needed */
+  display: flex; /* For side-by-side image and text */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 40px; /* Space between image and text */
+  align-items: center; /* Align items vertically */
+}
+
+.landing-page .overlap-group-wrapper {
+  /* Image container */
+  /* position: absolute; */ /* Part of flex flow */
+  width: 45%; /* Adjust width, e.g., 45% */
+  max-width: 543px;
+  /* height: 542px; */ /* Height will be auto based on content or aspect ratio */
+  /* top: 78px; */
+  /* left: 0; */
+  flex-shrink: 0; /* Prevent image from shrinking too much */
+}
+
+.landing-page .overlap-group-2 {
+  position: relative;
+  width: 100%; /* Full width of its wrapper */
+  padding-top: 100%; /* Maintain square aspect ratio for the ellipse effect if needed */
+  /* height: 555px; */ /* Auto or controlled by aspect ratio */
+  /* top: -7px; */
+  /* left: -7px; */
+}
+
+.landing-page .ellipse {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.landing-page .mask-group {
+  /* Actual image */
+  position: absolute;
+  width: 100%; /* Cover the ellipse */
+  height: 100%; /* Cover the ellipse */
+  object-fit: cover; /* Ensure image covers well */
+  top: 0;
+  left: 0;
+  border-radius: 50%; /* If the image itself should be circular inside the ellipse */
+}
+
+.landing-page .group-17 {
+  /* Text content for About Me */
+  /* position: absolute; */ /* Part of flex flow */
+  width: 50%; /* Adjust width, e.g., 50% */
+  max-width: 760px;
+  /* height: 701px; */ /* Auto height */
+  /* top: 0; */
+  /* left: 681px; */ /* Determined by flex gap */
+}
+
+.landing-page .i-m-a-computer {
+  /* About me paragraph */
+  /* position: absolute; */ /* Flow normally */
+  width: 100%; /* Full width of its container */
+  /* top: 113px; */ /* Determined by flow */
+  /* left: 0; */
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-new-white);
+  font-size: 21px;
+  letter-spacing: 0.63px;
+  line-height: normal;
+  margin-bottom: 30px; /* Space after paragraph */
+}
+
+.landing-page .text-wrapper-5 {
+  /* About Me Section Title */
+  /* position: absolute; */ /* Flow normally */
+  /* top: 0; */
+  /* left: 0; */
+  font-family: var(--h2-65-font-family);
+  font-weight: var(--h2-65-font-weight);
+  color: var(
+    --variable-collection-new-white
+  ); /* Will be overridden by .section-title-global */
+  font-size: var(--h2-65-font-size);
+  letter-spacing: var(--h2-65-letter-spacing);
+  line-height: var(--h2-65-line-height);
+  font-style: var(--h2-65-font-style);
+  margin-bottom: 20px; /* Space after title */
+}
+
+.landing-page .group-18 {
+  /* Skills container */
+  /* position: absolute; */ /* Flow normally */
+  width: 100%;
+  /* height: 349px; */ /* Auto height */
+  /* top: 352px; */ /* Determined by flow */
+  /* left: 0; */
+}
+
+.landing-page .group-19 {
+  /* Skill item container */
+  position: relative; /* Changed from absolute */
+  width: 100%;
+  /* height: 76px; */ /* Auto height */
+  /* top: 0; */ /* Determined by flow */
+  /* left: 0; */
+  margin-bottom: 25px; /* Space between skill items */
+}
+
+.landing-page .text-wrapper-6 {
+  /* Skill title */
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.72px;
+  /* position: absolute; */ /* Flow normally */
+  /* top: 0; */
+  /* left: 0; */
+  color: #ffffff;
+  line-height: normal;
+  margin-bottom: 10px; /* Space between skill title and bar */
+}
+
+.landing-page .group-20 {
+  /* Skill bar container */
+  /* top: 44px; */ /* Determined by flow */
+  position: relative; /* Changed from absolute */
+  width: 100%;
+  height: 32px; /* Keep height for bar + thumb */
+  /* left: 0; */
+}
+
+.landing-page .overlap-group-3 {
+  /* Skill bar overlap group */
+  position: relative;
+  height: 32px;
+}
+
+.landing-page .rectangle {
+  /* Skill bar track */
+  width: 100%; /* Full width */
+  background-color: #ecebeb;
+  position: absolute;
+  height: 12px;
+  top: 10px; /* Center track vertically relative to 32px height */
+  left: 0;
+  border-radius: 6px;
+}
+
+.landing-page .rectangle-2 {
+  /* Skill bar progress fill */
+  /* width: 687px; */ /* Width should be set by inline style or JS */
+  background-color: #800020;
+  position: absolute;
+  height: 12px;
+  top: 10px;
+  left: 0;
+  border-radius: 6px;
+}
+
+.landing-page .ellipse-2 {
+  /* Skill bar thumb */
+  width: 32px;
+  height: 32px;
+  /* left: 669px; */ /* Position based on progress fill width */
+  background-color: #ecebeb;
+  border-radius: 16px;
+  border: 3px solid;
+  border-color: #800020;
+  box-shadow: 0px 4px 7px #00000033;
+  position: absolute;
+  top: 0;
+  /* Adjust left based on the width of .rectangle-2. Example: left: calc(90% - 16px); */
+}
+
+.landing-page .data-analysis,
+.landing-page .text-wrapper-7,
+.landing-page .python-automation {
+  /* Other skill titles */
+  /* position: absolute; */ /* Flow normally */
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0.72px;
+  line-height: normal;
+  margin-bottom: 10px; /* Space before bar */
+  margin-top: 25px; /* Space from previous skill */
+}
+
+.landing-page .overlap-2, /* Other skill bar containers */
+.landing-page .overlap-3,
+.landing-page .group-21 {
+  position: relative; /* Changed from absolute */
+  width: 100%;
+  height: 32px;
+  /* top, left removed */
+  margin-bottom: 25px; /* Space between skill items */
+}
+/* Ensure .group-21 and .overlap-X only apply to skill items by context if needed */
+.landing-page .group-18 .overlap-2,
+.landing-page .group-18 .overlap-3,
+.landing-page .group-18 .group-21 {
+  margin-bottom: 25px;
+}
+
+.landing-page .rectangle-3,
+.landing-page .rectangle-4,
+.landing-page .rectangle-5 {
+  /* Other progress fills */
+  /* width set by inline style or JS */
+  position: absolute;
+  height: 12px;
+  top: 10px;
+  left: 0;
+  background-color: #800020;
+  border-radius: 6px;
+}
+
+.landing-page .ellipse-3,
+.landing-page .ellipse-4,
+.landing-page .ellipse-5 {
+  /* Other thumbs */
+  /* left position based on progress fill */
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  background-color: #ecebeb;
+  border-radius: 16px;
+  border: 3px solid;
+  border-color: #800020;
+  box-shadow: 0px 4px 7px #00000033;
+}
+
+/* Footer Section */
+.landing-page .foot {
+  /* Contact section container */
+  /* position: absolute; */ /* Flow normally */
+  position: relative;
+  width: 100%;
+  /* height: 721px; */ /* Auto height */
+  /* top: 3388px; */ /* Determined by flow */
+  /* left: -5px; */ /* No offset */
+  padding: 60px 0 0 0; /* Padding at the top, bottom handled by inner elements */
+  box-sizing: border-box;
+}
+
+.landing-page .overlap-4 {
+  /* Inner container for contact form and lower footer */
+  position: relative;
+  /* height: 721px; */ /* Auto height */
+  max-width: 1200px; /* Limit width of content */
+  margin: 0 auto; /* Center content */
+  padding: 0 20px; /* Horizontal padding */
+}
+
+.landing-page .frame-2 {
+  /* "Get in Touch" form area */
+  /* position: absolute; */ /* Flow normally */
+  position: relative;
+  width: 100%; /* Max width of 932px */
+  max-width: 932px;
+  /* height: 337px; */ /* Auto height */
+  /* top: 0; */
+  /* left: 498px; */ /* Centered by margin on parent */
+  margin: 0 auto 60px auto; /* Center and add bottom margin */
+}
+
+.landing-page .group-22 {
+  /* "Get in Touch" title and paragraph */
+  /* position: absolute; */ /* Flow normally */
+  width: 100%;
+  /* height: 214px; */ /* Auto height */
+  /* top: 0; */
+  /* left: 0; */
+  text-align: center; /* Center title and paragraph */
+  margin-bottom: 30px; /* Space before form */
+}
+
+.landing-page .p {
+  /* "Feel free to reach out" paragraph */
+  /* position: absolute; */ /* Flow normally */
+  width: 100%; /* Full width of parent */
+  /* top: 113px; */
+  /* left: 0; */
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.63px;
+  line-height: normal;
+}
+
+.landing-page .text-wrapper-8 {
+  /* "Get in Touch" title */
+  /* position: absolute; */ /* Flow normally */
+  /* top: 0; */
+  /* left: 250px; */ /* Centered by parent */
+  font-family: var(--h2-65-font-family);
+  font-weight: var(--h2-65-font-weight);
+  color: #ffffff; /* Will be overridden by .section-title-global */
+  font-size: var(--h2-65-font-size);
+  text-align: center;
+  letter-spacing: var(--h2-65-letter-spacing);
+  line-height: var(--h2-65-line-height);
+  font-style: var(--h2-65-font-style);
+  margin-bottom: 20px; /* Space after title */
+}
+
+.landing-page .group-23 {
+  /* Form fields container */
+  /* position: absolute; */ /* Flow normally */
+  width: 100%; /* Max width 878px */
+  max-width: 878px;
+  /* height: 75px; */ /* Auto height based on content */
+  /* top: 214px; */
+  /* left: 29px; */ /* Centered by margin on parent or flex */
+  margin: 0 auto; /* Center form fields */
+  display: flex; /* For side-by-side input and button */
+  gap: 15px; /* Space between input and button */
+}
+
+.landing-page .overlap-group-4 {
+  /* Email input field container */
+  /* position: absolute; */ /* Part of flex */
+  /* width: 627px; */ /* Flex grow */
+  flex-grow: 1; /* Allow input to take available space */
+  height: 75px;
+  /* top: 0; */
+  /* left: 0; */
+  background-color: #f7f7f7;
+  border-radius: 14px;
+  border: 1px solid;
+  border-color: #afafaf;
+  display: flex; /* To align placeholder/input inside */
+  align-items: center;
+  padding: 0 25px; /* Padding inside input container */
+}
+
+.landing-page .text-wrapper-9 {
+  /* Email input field / placeholder */
+  /* position: absolute; */ /* Part of flex */
+  /* top: 21px; */
+  /* left: 25px; */
+  width: 100%; /* Take full width of its container */
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #797878; /* Placeholder color */
+  font-size: 21px;
+  /* text-align: center; */ /* Usually left aligned for input */
+  letter-spacing: 0.63px;
+  line-height: normal;
+  background: transparent; /* Input field should be transparent */
+  border: none; /* No border on input itself */
+  outline: none; /* No outline */
+}
+input.text-wrapper-9::placeholder {
+  /* Style placeholder specifically */
+  color: #797878;
+  font-family: "Poppins-Regular", Helvetica;
+}
+
+.landing-page .overlap-5 {
+  /* "Contact Me" button */
+  /* position: absolute; */ /* Part of flex */
+  width: 222px;
+  height: 75px;
+  /* top: 0; */
+  /* left: 652px; */
+  background-color: #800020;
+  border-radius: 14px;
+  display: flex; /* Center text */
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.landing-page .text-wrapper-10 {
+  /* "Contact Me" text */
+  /* position: absolute; */ /* Centered by flex */
+  /* top: 20px; */
+  /* left: 36px; */
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.72px;
+  line-height: normal;
+}
+
+.landing-page .frame-3 {
+  /* Lower footer area (social, links, copyright) */
+  /* position: absolute; */ /* Flow normally */
+  position: relative;
+  width: 100%;
+  /* height: 552px; */ /* Auto height */
+  /* top: 169px; */ /* Determined by flow */
+  /* left: 0; */
+  padding-top: 60px; /* Space above this footer section */
+}
+
+.landing-page .overlap-6 {
+  /* Background for lower footer content */
+  position: relative;
+  /* height: 431px; */ /* Auto height */
+  /* top: 121px; */ /* No offset */
+  background-color: #1e1e1e; /* Or a slightly different shade like #1a1a1a */
+  padding: 40px 0 0 0; /* Padding at the top, bottom handled by copyright bar */
+}
+
+.landing-page .marcmelgar-all-wrapper {
+  /* Copyright bar */
+  /* position: absolute; */ /* Flow at the bottom */
+  width: 100%; /* Full width */
+  /* height: 84px; */ /* Auto height based on padding */
+  /* top: 347px; */ /* At the end of .overlap-6 */
+  /* left: 4px; */ /* No offset */
+  background-color: #121212; /* Darkest background */
+  padding: 25px 0; /* Vertical padding */
+  margin-top: 40px; /* Space above copyright bar */
+}
+
+.landing-page .marcmelgar-all {
+  /* Copyright text */
+  /* position: absolute; */ /* Centered by text-align */
+  /* top: 25px; */
+  /* left: 736px; */
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent; /* Base for spans */
+  font-size: 18px; /* Adjusted size */
+  letter-spacing: 0.63px;
+  line-height: normal;
+  text-align: center; /* Center copyright text */
+}
+
+.landing-page .span {
+  color: #ffffff;
+  letter-spacing: 0.13px;
+}
+
+.landing-page .text-wrapper-11 {
+  /* "MarcMelgar" in copyright */
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #800020; /* Accent color */
+  letter-spacing: 0.13px;
+}
+
+.landing-page .frame-4 {
+  /* Footer nav links container */
+  display: flex; /* Use flex for links */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center; /* Center links */
+  gap: 12px; /* Gap between links */
+  /* position: absolute; */ /* Flow normally */
+  /* top: 270px; */ /* Determined by flow */
+  /* left: 637px; */ /* Centered by flex */
+  margin-bottom: 30px; /* Space below footer nav */
+}
+
+.landing-page .group-24 {
+  /* Footer social links container */
+  /* position: absolute; */ /* Flow normally */
+  width: auto; /* Fit content */
+  max-width: 590px; /* Max width */
+  /* height: 102px; */ /* Auto height */
+  /* top: 50px; */ /* Determined by flow */
+  /* left: 669px; */ /* Centered by margin or flex on parent */
+  margin: 0 auto 40px auto; /* Center and add bottom margin */
+  display: flex; /* For aligning items */
+  flex-direction: column; /* Stack social links */
+  align-items: center; /* Center items */
+  gap: 15px; /* Space between social links */
+}
+.landing-page .group-24 > div, /* If social links are wrapped in divs */
+.landing-page .group-24 > a {
+  /* If they are direct anchors */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  text-decoration: none;
+}
+
+.landing-page .img-2 {
+  /* LinkedIn icon */
+  /* position: absolute; */ /* Part of flex */
+  width: 32px;
+  height: 32px;
+  /* top: 0; */
+  /* left: 0; */
+}
+
+.landing-page .text-wrapper-12 {
+  /* LinkedIn URL text */
+  /* position: absolute; */ /* Part of flex */
+  /* top: 1px; */
+  /* left: 75px; */
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  line-height: normal;
+}
+
+.landing-page .facebook-negative {
+  /* Facebook icon */
+  /* position: absolute; */ /* Part of flex */
+  width: 32px;
+  height: 32px;
+  /* top: 70px; */
+  /* left: 0; */
+}
+
+.landing-page .text-wrapper-13 {
+  /* Facebook URL text */
+  /* position: absolute; */ /* Part of flex */
+  /* top: 71px; */
+  /* left: 78px; */
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  line-height: normal;
+}
+
+/* Hero Section (.frame-5 is used as container) */
+.landing-page .frame-5 {
+  /* Hero section container */
+  /* position: absolute; */ /* Flow normally, usually first section */
+  position: relative;
+  width: 100%;
+  max-width: 1400px; /* Max content width */
+  /* height: 686px; */ /* Auto height based on content */
+  /* top: 248px; */ /* Should be at the top or after nav */
+  /* left: 250px; */ /* Centered by margin */
+  margin: 0 auto; /* Center section */
+  padding: 150px 20px 60px 20px; /* Top padding to push below nav, bottom padding */
+  display: flex; /* For aligning inner content if needed, or use for .header */
+  flex-direction: column; /* Stack .header and .group-28 (social icons) */
+  align-items: center; /* Center content horizontally */
+  box-sizing: border-box;
+}
+
+.landing-page .header {
+  /* Main hero content block */
+  /* position: absolute; */ /* Relative */
+  position: relative;
+  width: 100%;
+  /* height: 617px; */ /* Auto height */
+  /* top: 0; */
+  /* left: 0; */
+}
+
+.landing-page .group-25 {
+  /* Inner container for hero text and image */
+  position: relative;
+  width: 100%;
+  /* height: 520px; */ /* Auto height */
+  /* top: 97px; */ /* No offset from .header */
+  display: flex; /* For side-by-side text and image */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-between; /* Space between text and image */
+  align-items: center; /* Vertically align */
+  gap: 30px; /* Gap between text and image */
+}
+
+.landing-page .group-26 {
+  /* Hero text block */
+  /* position: absolute; */ /* Part of flex */
+  /* width: 555px; */ /* Flex basis or max-width */
+  flex-basis: 50%; /* Example width */
+  max-width: 555px;
+  /* height: 292px; */ /* Auto height */
+  /* top: 0; */
+  /* left: 0; */
+}
+
+.landing-page .text-wrapper-14 {
+  /* "Hi I am" */
+  /* position: absolute; */ /* Flow normally */
+  /* top: 0; */
+  /* left: 7px; */
+  font-family: var(--small-heading-24-font-family);
+  font-weight: var(--small-heading-24-font-weight);
+  color: var(--variable-collection-new-white);
+  font-size: var(--small-heading-24-font-size);
+  letter-spacing: var(--small-heading-24-letter-spacing);
+  line-height: var(--small-heading-24-line-height);
+  font-style: var(--small-heading-24-font-style);
+  margin-bottom: 5px; /* Space after */
+}
+
+.landing-page .overlap-group-5 {
+  /* Name and title block */
+  position: relative; /* Changed from absolute */
+  width: 100%;
+  /* height: 250px; */ /* Auto height */
+  /* top: 42px; */
+  /* left: 0; */
+}
+
+.landing-page .text-wrapper-15 {
+  /* "Marc Melgar" - Sub-name or role */
+  /* position: absolute; */ /* Flow normally */
+  /* top: 0; */
+  /* left: 4px; */
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #800020; /* Accent color */
+  font-size: 32px;
+  letter-spacing: 0.96px;
+  line-height: normal;
+  margin-bottom: 5px; /* Space after */
+}
+
+.landing-page .text-wrapper-16 {
+  /* "Computer" - Main Name Part 1 */
+  /* position: absolute; */ /* Flow normally */
+  /* top: 35px; */
+  /* left: 0; */
+  font-family: var(--main-heading-h1-font-family);
+  font-weight: var(--main-heading-h1-font-weight);
+  color: var(--variable-collection-new-white);
+  font-size: var(--main-heading-h1-font-size);
+  letter-spacing: var(--main-heading-h1-letter-spacing);
+  line-height: var(--main-heading-h1-line-height);
+  white-space: nowrap;
+  font-style: var(--main-heading-h1-font-style);
+}
+
+.landing-page .text-wrapper-17 {
+  /* "Engineer" - Main Name Part 2 */
+  /* position: absolute; */ /* Flow normally */
+  /* top: 130px; */
+  /* left: 7px; */
+  font-family: "Poppins-Bold", Helvetica; /* Ensure consistent font if this is part of name */
+  font-weight: 700;
+  color: var(--variable-collection-new-white);
+  font-size: 100px; /* Same as text-wrapper-16 */
+  letter-spacing: 3px;
+  line-height: 1.2; /* Match line-height of text-wrapper-16 */
+  white-space: nowrap;
+}
+
+.landing-page .overlap-7 {
+  /* Subtitle and Hire Me button container */
+  position: relative; /* Changed from absolute */
+  width: 100%; /* Full width of text block */
+  /* height: 102px; */ /* Auto height */
+  /* top: 322px; */ /* Determined by flow */
+  /* left: 7px; */
+  margin-top: 25px; /* Space above this block */
+}
+
+.landing-page .text-wrapper-18 {
+  /* Subtitle "Embedded Systems | ..." */
+  width: 100%;
+  font-family: var(--nav-bar-text-21-font-family);
+  font-weight: var(--nav-bar-text-21-font-weight);
+  font-size: var(--nav-bar-text-21-font-size);
+  /* text-align: justify; */ /* Can make it left for hero */
+  text-align: left;
+  letter-spacing: var(--nav-bar-text-21-letter-spacing);
+  /* position: absolute; */ /* Flow normally */
+  /* top: 0; */
+  /* left: 0; */
+  color: #ffffff;
+  line-height: var(--nav-bar-text-21-line-height);
+  font-style: var(--nav-bar-text-21-font-style);
+  margin-bottom: 25px; /* Space before button */
+}
+
+.landing-page .btn {
+  /* "Hire Me" button */
+  all: unset; /* Keep this if specific styling is applied below */
+  box-sizing: border-box;
+  /* position: absolute; */ /* Flow normally */
+  /* width: 188px; */ /* Defined by .btn-shared or padding */
+  /* height: 52px; */ /* Defined by .btn-shared or padding */
+  /* top: 50px; */
+  /* left: 0; */
+  background-color: #800020;
+  border-radius: 5px;
+  /* Styles below will be merged with .btn-shared */
+}
+
+.landing-page .text-wrapper-19 {
+  /* "Hire Me" text */
+  /* position: absolute; */ /* Centered by .btn-shared flex properties */
+  /* width: 83px; */
+  /* top: 16px; */
+  /* left: 53px; */
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 21px;
+  /* text-align: justify; */ /* Center if button text */
+  text-align: center;
+  letter-spacing: 0.63px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.landing-page .group-27 {
+  /* Hero image container */
+  /* position: absolute; */ /* Part of flex */
+  /* width: 486px; */ /* Flex basis or max-width */
+  flex-basis: 45%; /* Example width */
+  max-width: 486px;
+  /* height: 486px; */ /* Auto height based on aspect ratio */
+  /* top: 34px; */
+  /* left: 878px; */
+}
+
+.landing-page .mask-group-wrapper {
+  /* Hero image ellipse background */
+  position: relative;
+  width: 100%;
+  /* height: 498px; */ /* Auto or controlled by padding-top for aspect ratio */
+  padding-top: 100%; /* For square aspect ratio */
+  /* top: -6px; */
+  /* left: -6px; */
+  background-image: url(./img/ellipse-4.svg);
+  background-size: 100% 100%;
+}
+
+.landing-page .mask-group-2 {
+  /* Actual hero image */
+  position: absolute;
+  width: calc(100% - 12px); /* Adjust based on original 6px offset all around */
+  height: calc(100% - 12px);
+  top: 6px;
+  left: 6px;
+  object-fit: cover; /* Ensure image covers well */
+  border-radius: 50%; /* If image should be circular */
+}
+
+.landing-page .group-28 {
+  /* Social icons below hero content */
+  /* position: absolute; */ /* Flow after .header */
+  width: auto; /* Fit content */
+  /* height: 32px; */ /* Auto height */
+  /* top: 654px; */ /* Determined by flow and parent padding */
+  /* left: 1018px; */ /* Centered by parent align-items */
+  display: flex; /* Align icons horizontally */
+  gap: 20px; /* Space between icons */
+  margin-top: 40px; /* Space above social icons */
+}
+.landing-page .group-28 img {
+  width: 32px; /* Ensure consistent icon size */
+  height: 32px;
+}
+
+.landing-page .linkedin-negative,
+.landing-page .instagram-negative,
+.landing-page .twitter-negative,
+.landing-page .img-2 {
+  /* Assuming .img-2 is also a social icon here */
+  /* position: absolute; */ /* Part of flex */
+  width: 32px;
+  height: 32px;
+  /* top, left removed */
+}
+
+/* Achievements Section */
+.landing-page .achivements {
+  /* Achievements section container */
+  /* position: absolute; */ /* Flow normally */
+  position: relative;
+  width: 100%;
+  max-width: 1417px; /* Max content width */
+  /* height: 605px; */ /* Auto height */
+  /* top: 1943px; */
+  /* left: 251px; */
+  margin: 0 auto; /* Center section */
+  padding: 60px 20px; /* Vertical and horizontal padding */
+  box-sizing: border-box;
+}
+
+.landing-page .text-wrapper-20 {
+  /* Achievements Section Title */
+  /* position: absolute; */ /* Flow normally */
+  /* top: -1px; */
+  /* left: 472px; */ /* Centered by .section-title-global */
+  font-family: var(--h2-65-font-family);
+  font-weight: var(--h2-65-font-weight);
+  color: var(--variable-collection-new-white); /* Will be overridden */
+  font-size: var(--h2-65-font-size);
+  letter-spacing: var(--h2-65-letter-spacing);
+  line-height: var(--h2-65-line-height);
+  font-style: var(--h2-65-font-style);
+  text-align: center;
+  margin-bottom: 40px; /* Space after title */
+}
+
+.landing-page .group-29 {
+  /* Container for achievement text blocks */
+  /* position: absolute; */ /* Flow normally */
+  width: 100%;
+  max-width: 1345px; /* Max width for text blocks */
+  /* height: 384px; */ /* Auto height */
+  /* top: 133px; */
+  /* left: 15px; */
+  margin: 0 auto; /* Center text blocks */
+  display: flex; /* For side-by-side columns */
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 40px; /* Space between columns */
+  justify-content: space-around; /* Distribute columns */
+}
+
+.landing-page .academic-excellence, /* Achievement column 1 */
+.landing-page .internship {
+  /* Achievement column 2 */
+  /* position: absolute; */ /* Part of flex */
+  /* width: 634px; */ /* Flex basis for columns */
+  flex-basis: calc(50% - 20px); /* Two columns with gap */
+  max-width: 634px; /* Max width for each column */
+  /* top: 0; */
+  /* left: 0 or 707px */
+  font-family: "Poppins-SemiBold", Helvetica; /* Base font, overridden by spans */
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px; /* Base font size, overridden by spans */
+  letter-spacing: 0.72px;
+  line-height: normal;
+  text-align: left; /* Ensure text within columns is left-aligned */
+}
+
+.landing-page .text-wrapper-21 {
+  /* Sub-heading within achievements */
+  font-weight: 600;
+  letter-spacing: 0.17px;
+  /* Style applied by cohesive styles section */
+}
+
+.landing-page .text-wrapper-22 {
+  /* Paragraph text within achievements */
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 16px;
+  letter-spacing: 0.08px;
+  /* Style applied by cohesive styles section */
+}
+
+/* Original .cert div and its title might be redundant if using .cert-section */
+.landing-page .cert {
+  /* This was an old container for Certifications title */
+  /* display: none; */ /* Hide if .cert-section is used instead */
+  position: relative; /* If kept, ensure it flows */
+  width: 100%;
+  max-width: 1417px;
+  padding: 60px 20px 0 20px; /* Only top padding if title is here */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.landing-page .cert .text-wrapper-20 {
+  /* Title inside .cert, if kept */
+  text-align: center;
+  margin-bottom: 0; /* No bottom margin if section follows immediately */
+}
+
+/* === Styles for Certification Section (from original CSS, ensure they integrate) === */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
+/* Font already imported or handled by globals.css and body style */
+
+/* body styling here is redundant as it's at the top level of cohesive styles */
+
+.cert-section {
+  padding: 4rem 0; /* Use rem or px consistently */
+  position: relative;
+  overflow: hidden; /* For floating elements not to break layout */
+  background-color: #1e1e1e; /* Already body background */
+  color: #ffffff; /* Already body color */
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box;
+}
+
+.cert-section .container {
+  /* Renamed from global .container to avoid conflict */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem; /* Use rem or px consistently */
+}
+
+.cert-section .section-title {
+  /* Specific to cert section if different from global */
+  font-size: 65px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1.95px;
+  background: linear-gradient(45deg, #ffffff, #800020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.cert-section .section-subtitle {
+  text-align: center;
+  font-size: 21px;
+  color: #e8e8e8;
+  margin-bottom: 60px;
+  font-weight: 400;
+  letter-spacing: 0.63px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden; /* For badge and icon effects */
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex; /* For better control over content alignment */
+  flex-direction: column; /* Stack card content vertically */
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cert-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #800020, #a00030);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.cert-icon::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: transform 0.6s;
+}
+
+.cert-card:hover .cert-icon::before {
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+.cert-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.cert-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: 0.72px;
+}
+
+.cert-issuer {
+  font-size: 18px;
+  color: #800020; /* Accent color for issuer */
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.cert-description {
+  font-size: 16px;
+  color: #e8e8e8;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  flex-grow: 1; /* Allow description to take available space */
+}
+
+.cert-date {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.cert-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto; /* Push skills to bottom if card height varies */
+}
+
+.skill-tag {
+  background: rgba(128, 0, 32, 0.2);
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(128, 0, 32, 0.3);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: #800020;
+  transform: scale(1.05);
+}
+
+.cert-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #800020;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 2; /* Ensure badge is above other card content */
+}
+
+.floating-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Allow clicks to pass through */
+  z-index: 0; /* Behind card content but visible */
+}
+
+.floating-element {
+  position: absolute;
+  font-size: 2rem; /* Or adjust as needed */
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.15; /* Slightly more visible if desired */
+  color: #fff; /* Ensure color is set if emojis don't have inherent color */
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(15deg);
+  }
+}
+
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  margin-top: 3rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #800020; /* Use accent color for numbers */
+  /* color: #4CAF50; Original green, changed to maroon for consistency */
+  margin-bottom: 0.5rem;
+  display: block; /* Ensure it's a block for margin */
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/* Original .contact div and its content might be redundant */
+.landing-page .contact {
+  /* This was another old container for Contact title */
+  /* display: none; */ /* Hide if .foot section is used for contact */
+  position: relative;
+  width: 100%;
+  max-width: 1417px;
+  padding: 60px 20px 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.landing-page .contact .text-wrapper-23 {
+  /* Title inside .contact */
+  text-align: center;
+}
+.landing-page .group-30 {
+  /* Inner group in .contact */
+  max-width: 600px; /* Example width */
+  margin: 30px auto 0 auto; /* Center */
+}
+.landing-page .overlap-8 {
+  /* Email label wrapper */
+  margin-bottom: 10px;
+}
+.landing-page .text-wrapper-24 {
+  /* "Email" label */
+  font-size: 18px;
+  color: #e0e0e0;
+  display: block;
+  margin-bottom: 5px;
+}
+/* text-wrapper-25 was empty input field, handled by form in .foot section now */
+
+/* === COHESIVE STYLING ADDITIONS/MODIFICATIONS (from previous response) === */
+
+/* --- General Body & Typography --- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  line-height: 1.6;
+  margin: 0; /* Ensure no default body margin */
+  padding: 0; /* Ensure no default body padding */
+}
+html {
+  scroll-behavior: smooth; /* For smooth anchor link scrolling if JS isn't used */
+}
+
+/* --- Consistent Section Titles --- */
+.section-title-global, /* Use this class for new section titles for consistency */
+.landing-page .text-wrapper-5, /* About Me title */
+.landing-page .text-wrapper-20, /* Achievements title */
+/* .landing-page .cert .text-wrapper-20,  This is an old title, .cert-section .section-title is used */
+.landing-page .contact .text-wrapper-23, /* Contact section title in old structure */
+.landing-page .foot .text-wrapper-8 /* "Get in Touch" title */ {
+  font-family: var(--h2-65-font-family, "Poppins", Helvetica);
+  font-weight: var(--h2-65-font-weight, 600);
+  font-size: clamp(36px, 5vw, 55px); /* Responsive font size */
+  letter-spacing: var(--h2-65-letter-spacing, 1.95px);
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  background: linear-gradient(45deg, #ffffff, #800020);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  width: 100%;
+  left: 0;
+  padding: 0 15px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* --- Consistent Subtitles / Paragraphs --- */
+.section-subtitle-global, /* Use this class for new subtitles */
+.landing-page .i-m-a-computer, 
+.landing-page .achivements .text-wrapper-22,
+.landing-page .foot .p {
+  font-family: "Poppins-Regular", Helvetica, sans-serif;
+  font-size: clamp(16px, 2.5vw, 18px); /* Responsive font size */
+  color: #e8e8e8;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.landing-page .i-m-a-computer {
+  font-size: clamp(18px, 3vw, 20px);
+  text-align: left;
+  max-width: none; /* Allow full width within its flex container */
+}
+
+.landing-page .achivements .text-wrapper-22 {
+  text-align: left;
+  max-width: none;
+}
+.landing-page .foot .p {
+  text-align: center;
+}
+
+/* --- Standardized Button Styles --- */
+.btn-shared, /* Use this class for new buttons */
+.landing-page .overlap, 
+.landing-page .btn, 
+.landing-page .overlap-5 {
+  background-color: #800020;
+  color: #ffffff !important;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Poppins-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  line-height: normal; /* Ensure text is vertically centered if padding makes it tall */
+}
+
+.btn-shared:hover,
+.landing-page .overlap:hover,
+.landing-page .btn:hover,
+.landing-page .overlap-5:hover {
+  background-color: #a00030;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.landing-page .text-wrapper-4,
+.landing-page .text-wrapper-19,
+.landing-page .text-wrapper-10 {
+  color: #ffffff !important;
+  font-family: "Poppins-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+
+/* --- Styling for "About Me" Skills Progress Bars --- */
+.landing-page .group-18 .text-wrapper-6,
+.landing-page .group-18 .data-analysis,
+.landing-page .group-18 .text-wrapper-7,
+.landing-page .group-18 .python-automation {
+  font-family: "Poppins-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.landing-page .group-18 .rectangle {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Other styles (height, radius) are already defined and seem fine */
+}
+
+.landing-page .group-18 .rectangle-2,
+.landing-page .group-18 .rectangle-3,
+.landing-page .group-18 .rectangle-4,
+.landing-page .group-18 .rectangle-5 {
+  background-color: #800020;
+}
+
+.landing-page .group-18 .ellipse-2,
+.landing-page .group-18 .ellipse-3,
+.landing-page .group-18 .ellipse-4,
+.landing-page .group-18 .ellipse-5 {
+  background-color: #ffffff;
+  border: 3px solid #800020;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  top: calc(
+    50% - 14px
+  ); /* Vertically center thumb on the bar if bar height changes */
+  /* Adjust left position based on actual progress width */
+  /* Example for 90% progress: left: calc(90% - 14px); (14px is half of thumb width) */
+}
+
+/* --- Achievements Section Text Styling --- */
+.landing-page .achivements .text-wrapper-21 {
+  font-family: "Poppins-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+.landing-page
+  .achivements
+  .academic-excellence
+  > .text-wrapper-21:first-of-type,
+.landing-page .achivements .internship > .text-wrapper-21:first-of-type {
+  margin-top: 0;
+}
+
+/* --- Contact Form Input Field --- */
+.landing-page .group-23 {
+  /* Form container */
+  align-items: stretch; /* Make input and button same height */
+}
+.landing-page .overlap-group-4 {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  /* padding: 5px 20px; */ /* Padding already on original */
+  /* display: flex; */ /* Original already has */
+  /* align-items: center; */ /* Original already has */
+  height: auto; /* Let content dictate height, with min-height from button */
+  min-height: 52px; /* Match button height if needed */
+}
+
+input.text-wrapper-9 {
+  /* Target the input directly */
+  font-family: "Poppins-Regular", Helvetica, sans-serif;
+  font-size: 18px; /* Increased size */
+  color: #ffffff; /* Text color when typing */
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0; /* Vertical padding for text inside input */
+}
+input.text-wrapper-9::placeholder {
+  color: #bbb; /* Placeholder color */
+  font-family: "Poppins-Regular", Helvetica;
+}
+
+/* --- Footer Styling --- */
+.landing-page .frame-3 {
+  padding-top: 40px;
+}
+.landing-page .overlap-6 {
+  background-color: #1a1a1a;
+  padding-bottom: 0;
+}
+.landing-page .marcmelgar-all-wrapper {
+  background-color: #121212;
+  padding: 25px 0;
+}
+.landing-page .marcmelgar-all {
+  font-size: 16px;
+}
+
+.landing-page .frame-4 a.text-wrapper,
+.landing-page .frame-4 a.text-wrapper-2 {
+  color: #bbbbbb;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  padding: 5px 10px; /* Add padding for better click area */
+  border-radius: 4px;
+}
+.landing-page .frame-4 a.text-wrapper:hover,
+.landing-page .frame-4 a.text-wrapper-2:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle hover */
+}
+
+.landing-page .group-24 a.text-wrapper-12,
+.landing-page .group-24 a.text-wrapper-13 {
+  color: #e0e0e0;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.landing-page .group-24 a.text-wrapper-12:hover,
+.landing-page .group-24 a.text-wrapper-13:hover {
+  color: #800020;
+}
+/* For social icons in footer and hero */
+.landing-page .group-24 .img-2,
+.landing-page .group-24 .facebook-negative,
+.landing-page .group-28 img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.landing-page .group-24 .img-2:hover,
+.landing-page .group-24 .facebook-negative:hover,
+.landing-page .group-28 img:hover {
+  transform: scale(1.15);
+  filter: brightness(1.2); /* Example: make icon slightly brighter */
+}
+
+/* --- Navigation Bar --- */
+.landing-page .about-me .frame a.text-wrapper-2 {
+  /* Nav links */
+  color: #e0e0e0;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 18px; /* Slightly smaller for nav */
+}
+.landing-page .about-me .frame a.text-wrapper-2:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.landing-page .logo {
+  transform: scale(0.9);
+  transform-origin: left center;
+}
+
+/* General responsive adjustments */
+@media (max-width: 1920px) {
+  .landing-page {
+    width: 100%; /* Allow it to shrink */
+  }
+}
+
+@media (max-width: 992px) {
+  .landing-page .group-16, /* About me image and text */
+    .landing-page .group-25, /* Hero text and image */
+    .landing-page .group-29 /* Achievement columns */ {
+    flex-direction: column; /* Stack elements */
+    align-items: center; /* Center stacked items */
+    text-align: center; /* Center text in stacked columns */
+  }
+  .landing-page .group-16 > div,
+  .landing-page .group-25 > div,
+  .landing-page .group-29 > div {
+    width: 90% !important; /* Make columns take more width when stacked */
+    max-width: 600px; /* Limit max width of stacked items */
+    flex-basis: auto !important; /* Reset flex basis */
+    text-align: center; /* Center text content */
+  }
+  .landing-page .i-m-a-computer,
+     .landing-page .achivements .text-wrapper-22,
+     .landing-page .text-wrapper-18 /* Hero subtitle */ {
+    text-align: center; /* Center paragraph text when stacked */
+  }
+  .landing-page .group-27 {
+    /* Hero image container */
+    order: -1; /* Move image above text on mobile if desired */
+    margin-bottom: 30px;
+  }
+  .landing-page .about-me .group {
+    /* Nav bar inner container */
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .landing-page .about-me .frame {
+    /* Nav links */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .landing-page .overlap-wrapper {
+    /* CV button */
+    margin-top: 10px;
+  }
+  .landing-page .frame-5 {
+    /* Hero section padding */
+    padding-top: 120px; /* Adjust for stacked nav */
+  }
+}
+
+/* Responsive considerations from cert section (ensure they are general or scoped) */
+@media (max-width: 768px) {
+  .cert-grid {
+    /* Specific to cert section */
+    grid-template-columns: 1fr;
+  }
+
+  .stats-bar {
+    /* Specific to cert section, or make a global .stats-bar class */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    ); /* Fit 2, or 1 if too small */
+  }
+  .stat-number {
+    /* In stats bar */
+    font-size: 2rem;
+  }
+
+  .landing-page .text-wrapper-16, /* Hero "Computer" */
+  .landing-page .text-wrapper-17 /* Hero "Engineer" */ {
+    font-size: clamp(60px, 12vw, 80px); /* Responsive hero name */
+    line-height: 1.1;
+  }
+  .landing-page .text-wrapper-15 {
+    /* "Marc Melgar" */
+    font-size: clamp(24px, 5vw, 28px);
+  }
+  .landing-page .group-23 {
+    /* Contact form group */
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .landing-page .overlap-group-4, /* Input field wrapper */
+  .landing-page .overlap-5 {
+    /* Button */
+    width: 100% !important;
+    left: 0 !important;
+  }
+  .landing-page .overlap-5 {
+    height: 60px; /* Adjust button height */
+  }
+  input.text-wrapper-9 {
+    font-size: 16px;
+  }
+  .landing-page .text-wrapper-10 {
+    /* Contact me text */
+    font-size: 20px;
+  }
+  .landing-page .frame-4 {
+    /* Footer nav links */
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-bar {
+    grid-template-columns: 1fr; /* Single column stats on very small screens */
+  }
+  .stat-item {
+    margin-bottom: 1rem;
+  }
+  .landing-page .about-me .frame a.text-wrapper-2 {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+  .btn-shared,
+  .landing-page .overlap,
+  .landing-page .btn,
+  .landing-page .overlap-5 {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+}
+
+/* Ensure sections have some minimum top/bottom padding if not already set by specific rules */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+/* Override for specific sections if needed */
+.landing-page .frame-5 {
+  /* Hero section has its own padding */
+  padding-top: 150px;
+  padding-bottom: 60px;
+}
+.cert-section {
+  /* Cert section has its own padding */
+  padding: 4rem 0;
+}
+.landing-page .foot {
+  /* Footer/Contact section has its own padding logic */
+  padding-top: 60px;
+  padding-bottom: 0; /* Bottom padding handled by copyright bar */
+}
+.landing-page .about-me {
+  /* Nav bar container, not a typical section */
+  padding-top: 0;
+  padding-bottom: 0;
+}

@@ -1,0 +1,34 @@
+:root {
+  --nav-bar-text-21-font-family: "Poppins", Helvetica;
+  --nav-bar-text-21-font-weight: 400;
+  --nav-bar-text-21-font-size: 21px;
+  --nav-bar-text-21-letter-spacing: 0.63px;
+  --nav-bar-text-21-line-height: normal;
+  --nav-bar-text-21-font-style: normal;
+  --h2-65-font-family: "Poppins", Helvetica;
+  --h2-65-font-weight: 600;
+  --h2-65-font-size: 65px;
+  --h2-65-letter-spacing: 1.95px;
+  --h2-65-line-height: normal;
+  --h2-65-font-style: normal;
+  --small-heading-24-font-family: "Poppins", Helvetica;
+  --small-heading-24-font-weight: 600;
+  --small-heading-24-font-size: 24px;
+  --small-heading-24-letter-spacing: 0.72px;
+  --small-heading-24-line-height: normal;
+  --small-heading-24-font-style: normal;
+  --main-heading-h1-font-family: "Poppins", Helvetica;
+  --main-heading-h1-font-weight: 700;
+  --main-heading-h1-font-size: 100px;
+  --main-heading-h1-letter-spacing: 3px;
+  --main-heading-h1-line-height: 1.2; /* Adjusted from % to unitless */
+  --main-heading-h1-font-style: normal;
+  --variable-collection-white: rgba(255, 255, 255, 1);
+  --variable-collection-new-white: rgba(232, 232, 232, 1);
+  --accent-color: #800020; /* Added accent color variable */
+  --background-color: #1e1e1e; /* Added background color variable */
+  --text-color: #ffffff;
+  --text-color-muted: #e8e8e8;
+  --card-background: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+}
